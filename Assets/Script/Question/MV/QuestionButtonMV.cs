@@ -8,30 +8,28 @@ namespace Questions
     public class QuestionButtonMV : MonoBehaviour
     {
         [SerializeField] private int _id;
-        [SerializeField] private Button _button;
-        [SerializeField] private TextMeshProUGUI _answer;
-        [SerializeField] private QuestingHandler _handler;
+        [SerializeField] private GameObject  _refForIQuizAnswer;//Ссылка на объект,который содержит реализацию IQuizAnswer
+        private Button _button;
+        private TextMeshProUGUI _answer;
+        private IQuizAnswer _serviceQuizAnswerService;
 
-       
+
         private void Awake()
         {
+            _serviceQuizAnswerService = _refForIQuizAnswer.GetComponent<IQuizAnswer>();
             _answer = GetComponentInChildren<TextMeshProUGUI>();
-            _button = GetComponentInChildren<Button>();     
-        }
-        private void Start() {
-            
-            _handler = GetComponentInParent<QuestingHandler>();      
+            _button = GetComponentInChildren<Button>();
         }
         public void InitButton(int id, string value)
         {
             _id = id;
-            _answer.text = value;            
-            _button.onClick.AddListener(() =>{ _handler.GameRules.TryValidAnswer(_id);});          
+            _answer.text = value;
+            _button.onClick.AddListener(() => { _serviceQuizAnswerService.TryValidAnswer(_id); });
         }
-         public void UpdateButton(int id, string value)
+        public void UpdateButton(int id, string value)
         {
             _id = id;
-            _answer.text = value;   
+            _answer.text = value;
         }
 
         public int GetIdButton()
@@ -40,5 +38,5 @@ namespace Questions
 
     }
 
-  
+
 }

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
+using System.Threading.Tasks;
 
-public class Timer : MonoBehaviour, IGameOver
-{
-    public event UnityAction<GameOverType> e_GameOver;
+public class Timer : MonoBehaviour //IGameOver
+{  
     [SerializeField] private TextMeshProUGUI _timerText;
     [SerializeField] private float _timerGameplay;
     [SerializeField] private bool _startTimer = true;
@@ -24,10 +24,9 @@ public class Timer : MonoBehaviour, IGameOver
     }
 
 
-  
-    private void Start()
-    {
-       // _timerGameplay = 30;
+    private IGameOver _serviceGameOver;   
+    private void Awake() {
+       _serviceGameOver  = GetComponent<IGameOver>();
     }
     private void Update()
     {
@@ -40,13 +39,13 @@ public class Timer : MonoBehaviour, IGameOver
         TimerGameplay -= 1 * Time.deltaTime;
         if (TimerGameplay <= 0)
         {
-            e_GameOver?.Invoke(GameOverType.TimeOut);
+          _serviceGameOver.GameOver(GameOverType.TimeOut);     
             _startTimer = false;
         }
     }
     private void UpdateTimerText()
-    {
+    =>
         _timerText.text = _timerGameplay.ToString();
-    }
-
+    
+   
 }

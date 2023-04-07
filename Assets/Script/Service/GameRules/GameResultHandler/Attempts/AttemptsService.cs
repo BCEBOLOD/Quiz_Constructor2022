@@ -6,6 +6,13 @@ public class Attempts : MonoBehaviour, IAttempts
 {
     [SerializeField] private int _numberAttempts;
     [SerializeField] private List<Image> _health;
+    private IGameOver _serviceGameOver;
+
+
+    private void Awake()
+    {
+        _serviceGameOver = GetComponent<IGameOver>();
+    }
     private void Start()
     {
         _numberAttempts = 3;
@@ -23,14 +30,12 @@ public class Attempts : MonoBehaviour, IAttempts
         }
         else
         {
-            _numberAttempts=0;
-            EndGame();
+            _numberAttempts = 0;
+          
+            _serviceGameOver.GameOver(GameOverType.ZeroAttempts);
+          
         }
 
-    }
-    private void EndGame()
-    {
-       
     }
     public void OnReset() // fix интерфейс
     {
@@ -40,8 +45,7 @@ public class Attempts : MonoBehaviour, IAttempts
     private void UpdateHealth(bool IsTakeDamage)
     {
         if (IsTakeDamage)
-        {
-            _health.FirstOrDefault(x => x.gameObject.activeSelf == true).gameObject.SetActive(false);
-        }
+            if (_health.Any(x => x?.gameObject.activeSelf == true))
+                _health.FirstOrDefault(x => x?.gameObject.activeSelf == true)?.gameObject.SetActive(false);
     }
 }

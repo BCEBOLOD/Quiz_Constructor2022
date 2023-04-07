@@ -5,13 +5,13 @@ using TMPro;
 public class GameplayUI : MonoBehaviour
 {
     //  private ITimer _timer;
-    private IAttempts _attempts;
+ //   private IAttempts _attempts;
     private IScore _score;
-    [SerializeField] private GameOutcomeDisplay _gameOutcomeDisplay;
+    [SerializeField] private GameOutcomeDisplayService _gameOutcomeDisplay;
     private void Awake()
     {
         _score = GetComponent<IScore>();
-        _attempts = GetComponent<IAttempts>();
+    //    _attempts = GetComponent<IAttempts>();
       
     }
 
@@ -24,28 +24,28 @@ public class GameplayUI : MonoBehaviour
         else
         {
             _score.AdjustScore(-100);
-            _attempts.AdjustAttempts(-1, true);
+       //     _attempts.AdjustAttempts(-1, true);
         }
     }
-    public void GameOver(GameOverType typeGameOver,int numberCorrectAnswers)
-    {
-        _gameOutcomeDisplay.CalculateInfo(typeGameOver,numberCorrectAnswers);
-        switch (typeGameOver)
-        {
-            case GameOverType.TimeOut:
+    // public void GameOver(GameOverType typeGameOver,int numberCorrectAnswers)
+    // {
+    //     _gameOutcomeDisplay.CalculateInfo(typeGameOver,numberCorrectAnswers);
+    //     switch (typeGameOver)
+    //     {
+    //         case GameOverType.TimeOut:
 
-            case GameOverType.ZeroAttempts:
+    //         case GameOverType.ZeroAttempts:
 
 
-                break;
-            case GameOverType.Victory:
+    //             break;
+    //         case GameOverType.Victory:
 
-                break;
+    //             break;
 
-            default:
+    //         default:
 
-                break;
-        }
-    }
+    //             break;
+    //     }
+    // }
 
 }
