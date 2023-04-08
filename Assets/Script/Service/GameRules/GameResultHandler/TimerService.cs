@@ -5,28 +5,26 @@ using TMPro;
 using UnityEngine.Events;
 using System.Threading.Tasks;
 
-public class Timer : MonoBehaviour //IGameOver
-{  
-    [SerializeField] private TextMeshProUGUI _timerText;
+public class Timer : MonoBehaviour, ITimer //IGameOver
+{
     [SerializeField] private float _timerGameplay;
+    [SerializeField] private TextMeshProUGUI _timerText;
+    [SerializeField] private float _baseTime;
     [SerializeField] private bool _startTimer = true;
     public float TimerGameplay
     {
         get => _timerGameplay;
-        set
-        {
-            if (_timerGameplay != value)
-            {
-                _timerGameplay = value;
-                UpdateTimerText();
-            }
-        }
+        set => _timerGameplay = value;
     }
 
-
-    private IGameOver _serviceGameOver;   
-    private void Awake() {
-       _serviceGameOver  = GetComponent<IGameOver>();
+    private void Start()
+    {
+        OnRestart();
+    }
+    private IGameOver _serviceGameOver;
+    private void Awake()
+    {
+        _serviceGameOver = GetComponent<IGameOver>();
     }
     private void Update()
     {
@@ -37,15 +35,24 @@ public class Timer : MonoBehaviour //IGameOver
     private void SubstractSecond()
     {
         TimerGameplay -= 1 * Time.deltaTime;
+        _timerText.text = _timerGameplay.ToString();
         if (TimerGameplay <= 0)
         {
-          _serviceGameOver.GameOver(GameOverType.TimeOut);     
+            _serviceGameOver.GameOver(GameOverType.TimeOut);
             _startTimer = false;
         }
     }
-    private void UpdateTimerText()
-    =>
-        _timerText.text = _timerGameplay.ToString();
-    
-   
+
+    public void SelfActiveTimer(bool active)
+    {
+        _startTimer = active;
+        _timerText.gameObject.SetActive(active);
+
+    }
+
+    public void OnRestart()
+    {
+        _timerGameplay = _baseTime;
+       SelfActiveTimer(true);
+    }
 }

@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ITimer: IRestart
+public interface IRestart 
 {
-   public void SelfActiveTimer(bool active);
+   public void OnRestart();
+    
 }

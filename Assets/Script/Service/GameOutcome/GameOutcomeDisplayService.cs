@@ -7,11 +7,13 @@ using UnityEngine.Events;
 public class GameOutcomeDisplayService : MonoBehaviour,IGameOutcomeDisplay
 { 
     private int _totalQuestions;
-
+   // [SerializeField] private Button _nextButton;
+    private string _numberCorrectAnswers;
     [SerializeField] private Questions.QuestingHandler _questions;
-
+    [SerializeField] private GameOutcomeDisplayView _view;
     private void Start()
     {
+       
         // _restartButton.onClick.AddListener(() => RestartGame());
         // _nextButton.onClick.AddListener(() => NextLvl());
 
@@ -19,31 +21,22 @@ public class GameOutcomeDisplayService : MonoBehaviour,IGameOutcomeDisplay
     }
     public void CalculateInfo(GameOverType type, int numberCorrectAnswers)
     {
-        // _totalQuestions = _questions.Questing.Count;
-        // gameObject.SetActive(true);
-        // if (type == GameOverType.TimeOut || type == GameOverType.ZeroAttempts)
-        // {
-        //     //Без кнопок дальше
-        //     _nextButton.gameObject.SetActive(false);
-        // }
-        // else
-        // {
-        //     //кнопка с переходом на следующий уровень
-        // }
-        // _numberCorrectAnswers.text = $"{numberCorrectAnswers}/{_totalQuestions}";
-    }
-
-    // public void NextLvl()
-    // {
-
-    // }
-    // public void RestartGame()
-    // {
-    //     _nextButton.gameObject.SetActive(true);
-    //     _scoreText.text = "";
-    //     _numberCorrectAnswers.text = "";
-    //     gameObject.SetActive(false);
-    // }
+        _totalQuestions = _questions.Questing.Count;
+        gameObject.SetActive(true);
+        if (type == GameOverType.TimeOut || type == GameOverType.ZeroAttempts)
+        {
+            _view.ShowButton(true,false);
+            //Без кнопок дальше
+           // _nextButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            _view.ShowButton(true,true);
+            //кнопка с переходом на следующий уровень
+        }
+        _numberCorrectAnswers= $"{numberCorrectAnswers}/{_totalQuestions}";
+        _view.ShowResult(0,35000,_numberCorrectAnswers);
+    }  
 
     public void Victory()
     {
@@ -68,5 +61,10 @@ public class GameOutcomeDisplayService : MonoBehaviour,IGameOutcomeDisplay
     public void NextLvl()
     {
         throw new System.NotImplementedException();
+    }
+
+    public void ActiveUiPanel(bool activeself)
+    {
+       _view.gameObject.SetActive(activeself);
     }
 }

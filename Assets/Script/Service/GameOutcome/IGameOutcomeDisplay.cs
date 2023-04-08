@@ -11,4 +11,5 @@ public interface IGameOutcomeDisplay
     public void RestartGame();
     public void NextLvl();
     public void CalculateInfo(GameOverType type, int numberCorrectAnswers);
+    public void ActiveUiPanel(bool activeself);
 }

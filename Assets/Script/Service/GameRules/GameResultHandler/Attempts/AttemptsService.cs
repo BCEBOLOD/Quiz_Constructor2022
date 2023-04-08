@@ -15,13 +15,13 @@ public class Attempts : MonoBehaviour, IAttempts
     }
     private void Start()
     {
-        _numberAttempts = 3;
+        OnRestart();
     }
     public void AdjustAttempts(int value, bool IsTakeDamage)
     {
         _numberAttempts += value;
 
-        if (_numberAttempts >= 0)
+        if (_numberAttempts > 0)
         {
             if (IsTakeDamage)
             {
@@ -31,21 +31,23 @@ public class Attempts : MonoBehaviour, IAttempts
         else
         {
             _numberAttempts = 0;
-          
+
             _serviceGameOver.GameOver(GameOverType.ZeroAttempts);
-          
+            
         }
 
     }
-    public void OnReset() // fix интерфейс
-    {
-        _health.ForEach(x => x.gameObject.SetActive(true));
-        _numberAttempts = 3;
-    }
+
     private void UpdateHealth(bool IsTakeDamage)
     {
         if (IsTakeDamage)
             if (_health.Any(x => x?.gameObject.activeSelf == true))
                 _health.FirstOrDefault(x => x?.gameObject.activeSelf == true)?.gameObject.SetActive(false);
+    }
+
+    public void OnRestart()
+    {
+        _health.ForEach(x => x.gameObject.SetActive(true));
+        _numberAttempts = _health.Count;
     }
 }

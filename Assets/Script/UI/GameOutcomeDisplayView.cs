@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class GameOutcomeDisplayView : MonoBehaviour
+using UnityEngine.Events;
+public class GameOutcomeDisplayView : MonoBehaviour,IRestart
 {
+   
+    
     [SerializeField] private Button _restartButton;
     [SerializeField] private Button _nextButton;
 
@@ -15,13 +17,30 @@ public class GameOutcomeDisplayView : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _numberCorrectAnswers;
 
     private IGameOutcomeDisplay _serviceIGameOutcomeDisplay;
-    private void Awake() {
+    private void Awake()
+    {
         _serviceIGameOutcomeDisplay = GetComponentInParent<IGameOutcomeDisplay>();
     }
-     private void Start()
+    private void Start()
     {
-     //   _restartButton.onClick.AddListener(() => _serviceIGameOutcomeDisplay.RestartGame());
-      //  _nextButton.onClick.AddListener(() => _serviceIGameOutcomeDisplay.NextLvl());
-  
+      
+    }
+
+    public void ShowResult(int currentNumberLvl, int scoreText, string numberCorrectAnswers)
+    {
+        _currentNumberLvl.text = currentNumberLvl.ToString();
+        _scoreText.text = scoreText.ToString();
+        _numberCorrectAnswers.text = numberCorrectAnswers;
+    }
+    public void ShowButton(bool Restart, bool Next)
+    {
+        _restartButton.gameObject.SetActive(Restart);
+        _nextButton.gameObject.SetActive(Next);
+    }
+
+    public void OnRestart()
+    {
+       ShowButton(false,false);
+      gameObject.SetActive(false);
     }
 }

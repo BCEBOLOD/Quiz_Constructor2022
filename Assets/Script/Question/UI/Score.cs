@@ -25,4 +25,9 @@ public class Score : MonoBehaviour, IScore
     {
         _scoreText.text = ScoreBalance.ToString();
     }
+
+    public void OnRestart()
+    {
+        throw new System.NotImplementedException();
+    }
 }

@@ -5,8 +5,8 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class GameOverHandler : MonoBehaviour, IGameOver
-{  
-    
+{
+
     private ITimer _serviceTimer;
     private IAttempts _serviceAttempts;
     private IVictory _victoryService;
@@ -22,41 +22,40 @@ public class GameOverHandler : MonoBehaviour, IGameOver
     }
     public async Task GameOver(GameOverType type)
     {
-        print(type);
-      //  await ShowDisplayResult();
+        _serviceGameOutcomeDisplay.ActiveUiPanel(true);
+        //
+        _serviceTimer.SelfActiveTimer(false);
+        //
         switch (type)
         {
             case GameOverType.TimeOut:
-             await    GameOverTypeTimeOut();
+                await GameOverTypeTimeOut(type, _serviceQuizAnswer.NumberCorrectAnswers);
                 break;
             case GameOverType.ZeroAttempts:
-                await GameOverTypeZeroAttempts(type,_serviceQuizAnswer.NumberCorrectAnswers);
+                await GameOverTypeZeroAttempts(type, _serviceQuizAnswer.NumberCorrectAnswers);
                 break;
             case GameOverType.Victory:
-                await GameOverTypeVictory();
+                await GameOverTypeVictory(type, _serviceQuizAnswer.NumberCorrectAnswers);
                 break;
 
             default:
                 throw new System.Exception("GameOverService : необработанное исключение по перечислению GameOverType");
-
         }
+          _serviceGameOutcomeDisplay.CalculateInfo(type, _serviceQuizAnswer.NumberCorrectAnswers);
     }
 
-    private async Task GameOverTypeTimeOut()
+    private async Task GameOverTypeTimeOut(GameOverType type, int countCorrectAnswers)
+    {
+   //     _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
+    }
+    private async Task GameOverTypeZeroAttempts(GameOverType type, int countCorrectAnswers)
     {
 
+     //   _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
     }
-    private async Task GameOverTypeZeroAttempts(GameOverType type,int countCorrectAnswers)
+    private async Task GameOverTypeVictory(GameOverType type, int countCorrectAnswers)
     {
-        Debug.Log("Allax");
-        _serviceGameOutcomeDisplay.CalculateInfo(type,countCorrectAnswers);
+       // _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
     }
-    private async Task GameOverTypeVictory()
-    {
 
-    }
-    private async Task ShowDisplayResult()
-    {
-
-    }
 }
