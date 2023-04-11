@@ -12,6 +12,7 @@ public class GameOverHandler : MonoBehaviour, IGameOver
     private IVictory _victoryService;
     private IQuizAnswer _serviceQuizAnswer;
     private IGameOutcomeDisplay _serviceGameOutcomeDisplay;
+    [SerializeField] private GameObject _quizPanel;//Панель с попытками,время,вопросы,ответы
     private void Awake()
     {
         _serviceTimer = GetComponent<ITimer>();
@@ -23,6 +24,7 @@ public class GameOverHandler : MonoBehaviour, IGameOver
     public async Task GameOver(GameOverType type)
     {
         _serviceGameOutcomeDisplay.ActiveUiPanel(true);
+        _quizPanel.gameObject.SetActive(false);
         //
         _serviceTimer.SelfActiveTimer(false);
         //
@@ -41,21 +43,21 @@ public class GameOverHandler : MonoBehaviour, IGameOver
             default:
                 throw new System.Exception("GameOverService : необработанное исключение по перечислению GameOverType");
         }
-          _serviceGameOutcomeDisplay.CalculateInfo(type, _serviceQuizAnswer.NumberCorrectAnswers);
+        _serviceGameOutcomeDisplay.CalculateInfo(type, _serviceQuizAnswer.NumberCorrectAnswers);
     }
 
     private async Task GameOverTypeTimeOut(GameOverType type, int countCorrectAnswers)
     {
-   //     _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
+        //     _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
     }
     private async Task GameOverTypeZeroAttempts(GameOverType type, int countCorrectAnswers)
     {
 
-     //   _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
+        //   _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
     }
     private async Task GameOverTypeVictory(GameOverType type, int countCorrectAnswers)
     {
-       // _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
+        // _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
     }
 
 }

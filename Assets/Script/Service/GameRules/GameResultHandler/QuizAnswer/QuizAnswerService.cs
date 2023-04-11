@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuizAnswerService : MonoBehaviour,IQuizAnswer
+public class QuizAnswerService : MonoBehaviour,IQuizAnswer,IRestart
 {
     [SerializeField] private int _maxCountQuesting;
-    [SerializeField] private int _correctAnswerId;
+    [SerializeField] private int _correctAnswer;
     [SerializeField] private int _numberCorrectAnswers;
+    [SerializeField] private GameObject _quizPanel;//Панель с попытками,время,вопросы,ответы
     private IGameOver _serviceGameOver;
     private Questions.IQuesting _iQuesting;
     private IShuffle _iShuffleService;
@@ -28,7 +29,7 @@ public class QuizAnswerService : MonoBehaviour,IQuizAnswer
 
     public void TryValidAnswer(int idButton)
     {
-        if (idButton == _correctAnswerId)
+        if (idButton == _correctAnswer)
         {
             //     + количество отвеченных вопросов
             _numberCorrectAnswers++;
@@ -39,16 +40,22 @@ public class QuizAnswerService : MonoBehaviour,IQuizAnswer
             _attemptsService.AdjustAttempts(-1,true);
             //_gameplayUI.ResultClick(false);
         }
-        if (_correctAnswerId == _maxCountQuesting)
-        {
-            //   e_gameover?.Invoke();
+        if (_correctAnswer == _maxCountQuesting)
+        {        
             _serviceGameOver.GameOver(GameOverType.Victory);
+          
             return;
             //Завершение и выход в гл меню
         }
-        _correctAnswerId++;
+        _correctAnswer++;
         _iShuffleService.OnShuffleButtons();
-        _iQuesting.NextQuesting(_correctAnswerId);
+        _iQuesting.NextQuesting(_correctAnswer);
     }
 
+    public void OnRestart()
+    {
+        _quizPanel.gameObject.SetActive(true);
+        _correctAnswer = 0;
+        _numberCorrectAnswers =0;
+    }
 }

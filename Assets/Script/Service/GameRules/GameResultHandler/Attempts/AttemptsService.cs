@@ -31,7 +31,7 @@ public class Attempts : MonoBehaviour, IAttempts
         else
         {
             _numberAttempts = 0;
-
+            print("call");
             _serviceGameOver.GameOver(GameOverType.ZeroAttempts);
             
         }

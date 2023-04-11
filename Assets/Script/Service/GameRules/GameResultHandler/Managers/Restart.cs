@@ -11,6 +11,7 @@ public class Restart : MonoBehaviour, IRestart
     [SerializeField] private IAttempts _serviceAttempts;
     [SerializeField] private GameOutcomeDisplayView _gameOutcomeDisplayView;
     [SerializeField] private IScore _serviceScore;
+    [SerializeField] private QuizAnswerService _serviceuizAnswer; 
     /*
     Дисплей UI,
     Таймер,
@@ -29,8 +30,10 @@ public class Restart : MonoBehaviour, IRestart
     public void OnRestart()
     {
     //    _iGameOutcomeDisplay.RestartGame();
+   
         _serviceTimer.OnRestart();
         _serviceAttempts.OnRestart();
         _gameOutcomeDisplayView.OnRestart();
+        _serviceuizAnswer.OnRestart();
     }
 }
