@@ -2355,7 +2355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -43.156372, y: 10.7890625}
+  m_AnchoredPosition: {x: -43.156494, y: 10.7890625}
   m_SizeDelta: {x: -819.9705, y: -453.1417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761691123
@@ -4452,6 +4452,7 @@ GameObject:
   - component: {fileID: 1470270750}
   - component: {fileID: 1470270752}
   - component: {fileID: 1470270753}
+  - component: {fileID: 1470270754}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -4515,11 +4516,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1470270749}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2009e29a3749e49ba2597186e9ee51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1470270754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470270749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec9aaed23c72d0e4fab52f9441c045cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _buttonsHolder: {fileID: 761691121}
-  _buttonsList: []
+  _saveLoadManager: {fileID: 1470270753}
 --- !u!1 &1494937996
 GameObject:
   m_ObjectHideFlags: 0
