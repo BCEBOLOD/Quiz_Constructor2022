@@ -8,7 +8,7 @@ public class GameRules : MonoBehaviour//,IGameRules
 {
 
 
-  //  [SerializeField] private GameplayUI _gameplayUI;
+   
     private QuestingHandler _questingHandler;
     private Questions.IQuesting _iQuesting;
     private IShuffle _iShuffleService; 

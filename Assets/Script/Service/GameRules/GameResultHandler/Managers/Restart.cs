@@ -12,6 +12,7 @@ public class Restart : MonoBehaviour, IRestart
     [SerializeField] private GameOutcomeDisplayView _gameOutcomeDisplayView;
     [SerializeField] private IScore _serviceScore;
     [SerializeField] private QuizAnswerService _serviceuizAnswer; 
+    [SerializeField] private GameObject _serviceHolder;
     /*
     Дисплей UI,
     Таймер,
@@ -19,8 +20,9 @@ public class Restart : MonoBehaviour, IRestart
     */
     private void Awake()
     {
+      
         _iGameOutcomeDisplay = GetComponentInParent<IGameOutcomeDisplay>();
-        _serviceTimer = GetComponentInParent<ITimer>();
+        _serviceTimer = _serviceHolder.GetComponentInChildren<ITimer>();
         _serviceAttempts = GetComponentInParent<IAttempts>();
     }
     private void Start()

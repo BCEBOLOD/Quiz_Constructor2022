@@ -22,12 +22,12 @@ public class ShuffleService : MonoBehaviour, IShuffle
 
     public void OnShuffleQuestion()
     {
-         for (int i = 0; i < _questingHandler.Questing.Count; i++)
+         for (int i = 0; i < _questingHandler.Questing.QuestionList.Count; i++)
             {
-                int rndIndex = Random.Range(i,_questingHandler.Questing.Count);
-                var temp = _questingHandler.Questing[rndIndex];
-                _questingHandler.Questing[rndIndex] = _questingHandler.Questing[i];
-                _questingHandler.Questing[i] = temp;
+                int rndIndex = Random.Range(i,_questingHandler.Questing.QuestionList.Count);
+                var temp = _questingHandler.Questing.QuestionList[rndIndex];
+                _questingHandler.Questing.QuestionList[rndIndex] = _questingHandler.Questing.QuestionList[i];
+                _questingHandler.Questing.QuestionList[i] = temp;
             }
     }
 }

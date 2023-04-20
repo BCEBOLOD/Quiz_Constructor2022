@@ -15,7 +15,7 @@ public class GameOverHandler : MonoBehaviour, IGameOver
     [SerializeField] private GameObject _quizPanel;//Панель с попытками,время,вопросы,ответы
     private void Awake()
     {
-        _serviceTimer = GetComponent<ITimer>();
+        _serviceTimer = GetComponentInChildren<ITimer>();
         _serviceAttempts = GetComponent<IAttempts>();
         _victoryService = GetComponent<IVictory>();
         _serviceGameOutcomeDisplay = GetComponentInChildren<IGameOutcomeDisplay>();

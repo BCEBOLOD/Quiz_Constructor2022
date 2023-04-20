@@ -14,14 +14,10 @@ public class GameOutcomeDisplayService : MonoBehaviour,IGameOutcomeDisplay
     private void Start()
     {
        
-        // _restartButton.onClick.AddListener(() => RestartGame());
-        // _nextButton.onClick.AddListener(() => NextLvl());
-
-    //    gameObject.SetActive(false);
     }
     public void CalculateInfo(GameOverType type, int numberCorrectAnswers)
     {
-        _totalQuestions = _questions.Questing.Count;
+        _totalQuestions = _questions.Questing.QuestionList.Count;
         gameObject.SetActive(true);
         if (type == GameOverType.TimeOut || type == GameOverType.ZeroAttempts)
         {
@@ -35,7 +31,7 @@ public class GameOutcomeDisplayService : MonoBehaviour,IGameOutcomeDisplay
             //кнопка с переходом на следующий уровень
         }
         _numberCorrectAnswers= $"{numberCorrectAnswers}/{_totalQuestions}";
-        _view.ShowResult(0,35000,_numberCorrectAnswers);
+        _view.ShowResult(0,_numberCorrectAnswers);
     }  
 
     public void Victory()

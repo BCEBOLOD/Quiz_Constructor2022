@@ -11,9 +11,7 @@ public class GameOutcomeDisplayView : MonoBehaviour,IRestart
     [SerializeField] private Button _restartButton;
     [SerializeField] private Button _nextButton;
 
-    [SerializeField] private TextMeshProUGUI _currentNumberLvl;
-    [SerializeField] private TextMeshProUGUI _scoreText;
-
+    [SerializeField] private TextMeshProUGUI _currentNumberLvl; 
     [SerializeField] private TextMeshProUGUI _numberCorrectAnswers;
 
     private IGameOutcomeDisplay _serviceIGameOutcomeDisplay;
@@ -26,10 +24,10 @@ public class GameOutcomeDisplayView : MonoBehaviour,IRestart
       
     }
 
-    public void ShowResult(int currentNumberLvl, int scoreText, string numberCorrectAnswers)
+    public void ShowResult(int currentNumberLvl,  string numberCorrectAnswers)
     {
         _currentNumberLvl.text = currentNumberLvl.ToString();
-        _scoreText.text = scoreText.ToString();
+    
         _numberCorrectAnswers.text = numberCorrectAnswers;
     }
     public void ShowButton(bool Restart, bool Next)
