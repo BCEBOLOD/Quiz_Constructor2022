@@ -5,6 +5,6 @@ using UnityEngine;
 public class LevelData
 {
   public bool IsOpen; // прогресс в процентах
-    public float Time; // время прохождения уровня
-    public int Score; // количество очков, набранных на уровне
+    // public float Time; // время прохождения уровня
+    // public int Score; // количество очков, набранных на уровне
 }

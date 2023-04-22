@@ -13,6 +13,9 @@ public class SaveLoadManager : MonoBehaviour
         LoadGameData();
     }
 
+private void Start() {
+    print(Application.persistentDataPath);
+}
     public void SaveGameData()
     {
         // сохранение данных игры в JSON файл
@@ -35,14 +38,14 @@ public class SaveLoadManager : MonoBehaviour
             // создание новых данных игры, если JSON файл еще не существует
             gameData = new GameData();
             gameData.volume = 0.5f;
-            gameData.language = "english";
+          //  gameData.language = "english";
             gameData.levels = new LevelData[10]; // создание трех уровней
             for (int i = 0; i < 10; i++)
             {
                 gameData.levels[i] = new LevelData();
                 gameData.levels[i].IsOpen = false;
-                gameData.levels[i].Time = 0f;
-                gameData.levels[i].Score = 0;
+                // gameData.levels[i].Time = 0f;
+                // gameData.levels[i].Score = 0;
             }
             gameData.levels[0].IsOpen = true;
             SaveGameData(); // сохранение новых данных игры в JSON файл

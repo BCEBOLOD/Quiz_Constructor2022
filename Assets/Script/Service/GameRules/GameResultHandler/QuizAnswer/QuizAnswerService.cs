@@ -40,7 +40,7 @@ public class QuizAnswerService : MonoBehaviour,IQuizAnswer,IRestart
             _attemptsService.AdjustAttempts(-1,true);
             //_gameplayUI.ResultClick(false);
         }
-        if (_correctAnswer == _maxCountQuesting)
+        if (_numberCorrectAnswers == _maxCountQuesting)
         {        
             _serviceGameOver.GameOver(GameOverType.Victory);
           
