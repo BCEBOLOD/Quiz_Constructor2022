@@ -14,6 +14,7 @@ public class GameOutcomeDisplayView : MonoBehaviour,IRestart
     [SerializeField] private TextMeshProUGUI _currentNumberLvl; 
     [SerializeField] private TextMeshProUGUI _numberCorrectAnswers;
     [SerializeField] private Questions.QuestingHandler _questingHandler;
+     [SerializeField] private SaveLoadManager _saveloadManager;
     private IGameOutcomeDisplay _serviceIGameOutcomeDisplay;
     private void Awake()
     {
@@ -21,7 +22,7 @@ public class GameOutcomeDisplayView : MonoBehaviour,IRestart
     }
     private void Start()
     {
-    //  _currentNumberLvl.text =_questingHandler.; 
+     _currentNumberLvl.text =_saveloadManager.GameData.indexButton.ToString();
     }
 
     public void ShowResult(int currentNumberLvl,  string numberCorrectAnswers)

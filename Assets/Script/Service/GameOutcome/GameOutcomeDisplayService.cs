@@ -11,10 +11,8 @@ public class GameOutcomeDisplayService : MonoBehaviour,IGameOutcomeDisplay
     private string _numberCorrectAnswers;
     [SerializeField] private Questions.QuestingHandler _questions;
     [SerializeField] private GameOutcomeDisplayView _view;
-    private void Start()
-    {
-       
-    }
+  
+   
     public void CalculateInfo(GameOverType type, int numberCorrectAnswers)
     {
         _totalQuestions = _questions.Questing.QuestionList.Count;
