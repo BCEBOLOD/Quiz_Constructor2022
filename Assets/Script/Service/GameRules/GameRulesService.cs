@@ -21,7 +21,7 @@ public class GameRules : MonoBehaviour//,IGameRules
     }
     private void Start()
     { 
-        _iShuffleService.OnShuffleQuestion();
+       _iShuffleService.OnShuffleQuestion();
 
     }
 }

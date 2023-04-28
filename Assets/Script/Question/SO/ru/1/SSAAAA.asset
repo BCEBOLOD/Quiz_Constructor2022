@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8617217940cbed4cb0e6bdf3be9298f, type: 3}
   m_Name: SSAAAA
   m_EditorClassIdentifier: 
-  _description: "\u0436\u0438\u0436\u0430"
+  _description: "\u041E\u0442\u0432\u0435\u0442 \u0434\u043E\u043B\u0436\u0435\u043D
+    \u0431\u044B\u0442\u044C 1"
   _answers:
   - 2d
-  - adad
+  - 1
   - ad
   - aada
   _correctAnswerId: 1

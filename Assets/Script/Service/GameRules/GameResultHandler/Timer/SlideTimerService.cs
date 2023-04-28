@@ -11,10 +11,11 @@ public class SlideTimerService : MonoBehaviour, ITimer //IGameOver
     [SerializeField] private TextMeshProUGUI _timerText;
     [SerializeField] private float _baseTime;
     [SerializeField] private bool _startTimer = true;
+    [SerializeField] private AnimationAnswersService _animationAnswersService;
     public float TimerGameplay
     {
         get => _timerGameplay;
-      private  set => _timerGameplay = value;
+        private set => _timerGameplay = value;
     }
 
     public TextMeshProUGUI TimerText => _timerText;
@@ -25,6 +26,15 @@ public class SlideTimerService : MonoBehaviour, ITimer //IGameOver
 
     private void Start()
     {
+        _animationAnswersService.e_NextQuesting += () =>
+        {
+            OnRestart();
+            
+        };
+        _animationAnswersService.e_AwaitNewQuesting += () =>
+        {
+            SelfActiveTimer(false);
+        };
         OnRestart();
     }
     private IGameOver _serviceGameOver;
@@ -41,7 +51,7 @@ public class SlideTimerService : MonoBehaviour, ITimer //IGameOver
     private void SubstractSecond()
     {
         TimerGameplay -= 1 * Time.deltaTime;
-        _timerText.text = _timerGameplay.ToString();
+        _timerText.text = Mathf.RoundToInt(_timerGameplay).ToString();
         if (TimerGameplay <= 0)
         {
             _serviceGameOver.GameOver(GameOverType.TimeOut);
@@ -58,12 +68,12 @@ public class SlideTimerService : MonoBehaviour, ITimer //IGameOver
 
     public void OnRestart()
     {
-       RestartTime();
-       SelfActiveTimer(true);
+        SelfActiveTimer(true);
+        RestartTime();
     }
 
     public void RestartTime()
     {
-       _timerGameplay = _baseTime;
+        _timerGameplay = _baseTime;
     }
 }

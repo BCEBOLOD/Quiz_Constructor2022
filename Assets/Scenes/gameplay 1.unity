@@ -967,7 +967,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 75415583}
   m_Father: {fileID: 1670205642}
@@ -1003,7 +1003,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1021,19 +1021,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 286555937}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 286555939}
-        m_TargetAssemblyTypeName: Questions.QuestionButtonMV, Assembly-CSharp
-        m_MethodName: OnClickValid
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &286555937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,7 +1127,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1991832302}
   m_Father: {fileID: 1670205642}
@@ -1175,7 +1163,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1193,19 +1181,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 481673319}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 481673321}
-        m_TargetAssemblyTypeName: Questions.QuestionButtonMV, Assembly-CSharp
-        m_MethodName: OnClickValid
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &481673319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1256,7 +1232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf2d56661a6add4a89b224c38382d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 3
+  _id: 0
   _refForIQuizAnswer: {fileID: 1915770286}
   _animator: {fileID: 0}
 --- !u!95 &481673322
@@ -1507,56 +1483,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724576552}
   m_CullTransparentMesh: 1
---- !u!1 &729899799
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 729899800}
-  - component: {fileID: 729899801}
-  m_Layer: 0
-  m_Name: AnimationButtonService
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &729899800
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729899799}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1915770287}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &729899801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729899799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 296e6b8fb5b2af2478960600ac78205d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _buttonsList:
-  - {fileID: 286555939}
-  - {fileID: 2141707684}
-  - {fileID: 2084382820}
-  - {fileID: 481673321}
-  idtemp: 0
 --- !u!1 &735134926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,6 +2151,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089675625}
   m_CullTransparentMesh: 1
+--- !u!1 &1167243962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1167243963}
+  - component: {fileID: 1167243964}
+  m_Layer: 0
+  m_Name: AnimationButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1167243963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167243962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1915770287}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1167243964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167243962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 296e6b8fb5b2af2478960600ac78205d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonsList:
+  - {fileID: 286555939}
+  - {fileID: 2141707684}
+  - {fileID: 2084382820}
+  - {fileID: 481673321}
 --- !u!1 &1184491041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2963,9 +2938,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timerGameplay: 0
   _timerText: {fileID: 1048283511}
-  _baseTime: 11
+  _baseTime: 12
   _startTimer: 1
-  _animationAnswersService: {fileID: 729899801}
 --- !u!1 &1752786327
 GameObject:
   m_ObjectHideFlags: 0
@@ -3324,7 +3298,7 @@ Transform:
   - {fileID: 1198597043}
   - {fileID: 1744519250}
   - {fileID: 1699005377}
-  - {fileID: 729899800}
+  - {fileID: 1167243963}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3343,9 +3317,8 @@ MonoBehaviour:
   _maxCountQuesting: 0
   _correctAnswer: 0
   _numberCorrectAnswers: 0
-  _numberOfResponses: 0
   _quizPanel: {fileID: 1184491041}
-  _animationAnswers: {fileID: 729899801}
+  _animationAnswers: {fileID: 1167243964}
 --- !u!114 &1915770289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3675,7 +3648,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3693,19 +3666,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2084382818}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2084382820}
-        m_TargetAssemblyTypeName: Questions.QuestionButtonMV, Assembly-CSharp
-        m_MethodName: OnClickValid
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2084382818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3756,7 +3717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf2d56661a6add4a89b224c38382d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 2
+  _id: 0
   _refForIQuizAnswer: {fileID: 1915770286}
   _animator: {fileID: 0}
 --- !u!95 &2084382821
@@ -3847,7 +3808,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3865,19 +3826,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2141707682}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2141707684}
-        m_TargetAssemblyTypeName: Questions.QuestionButtonMV, Assembly-CSharp
-        m_MethodName: OnClickValid
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2141707682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3928,7 +3877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf2d56661a6add4a89b224c38382d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 1
+  _id: 0
   _refForIQuizAnswer: {fileID: 1915770286}
   _animator: {fileID: 0}
 --- !u!95 &2141707685

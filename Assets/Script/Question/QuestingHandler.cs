@@ -29,6 +29,7 @@ namespace Questions
             _questing = Resources.Load<QuestionLvl>($"Lvl_{_saveLoadManager.GameData.indexButton}");
             GameRules = GetComponent<IGameRules>();
             _imageBackground = GetComponentInChildren<IImageBackgroundQuestion>();
+             _buttons = _answersHolder.GetComponentsInChildren<QuestionButtonMV>().ToList();
         }
         private void Start()
         {
@@ -38,14 +39,11 @@ namespace Questions
         }
        
         private void FirstInit(int index)
-        {
-            if (_answersHolder == null)
-                return;
-            _buttons = _answersHolder.GetComponentsInChildren<QuestionButtonMV>().ToList();
-            var answer = Questing.QuestionList[index].Answers;
+        {           
+          //  var answer = Questing.QuestionList[index].Answers;
             for (int i = 0; i < _buttons.Count; i++)
             {
-                _buttons[i].InitButton(i, answer[i]);
+                _buttons[i].InitButton(i, Questing.QuestionList[index].Answers[i]);
             }
             _imageBackground.OnSwitchSprite(Questing.QuestionList[index].Sprite);
 
@@ -56,17 +54,20 @@ namespace Questions
             if(id >= Questing.QuestionList.Count)
             return;
             _desctiptionQuestion.text = Questing.QuestionList[id].Desctiption;
-            var answer = Questing.QuestionList[id].Answers;
+         
             for (int i = 0; i < _buttons.Count; i++)
             {
-                _buttons[i].UpdateButton(i, answer[i]);
+                _buttons[i].UpdateButton(i, Questing.QuestionList[id].Answers[i]);
             }
             _imageBackground.OnSwitchSprite(Questing.QuestionList[id].Sprite);
         }
 
         public int NumberQuestions() => Questing.QuestionList.Count ;
 
-
+        public int CurrentCorrectAnswer(int NumberOfResponses)
+        {
+            return _questing.QuestionList[NumberOfResponses].CorrectAnswerId;
+        }
     }
 
 
@@ -75,5 +76,6 @@ namespace Questions
     {
         public void NextQuesting(int id);
         public int NumberQuestions();
+        public int CurrentCorrectAnswer(int NumberOfResponses);
     }
 }

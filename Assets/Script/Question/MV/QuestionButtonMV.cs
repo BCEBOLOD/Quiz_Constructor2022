@@ -9,39 +9,53 @@ namespace Questions
     {
         [SerializeField] private int _id;
         [SerializeField] private GameObject _refForIQuizAnswer;//Ссылка на объект,который содержит реализацию IQuizAnswer
+        [SerializeField] private Animator _animator;
         private Button _button;
         private TextMeshProUGUI _answer;
         private IQuizAnswer _serviceQuizAnswerService;
         private ITimer _timer;
 
+        public Button Button { get => _button; set => _button = value; }
+        public int Id { get => _id;  private set => _id = value; }
+        public Animator Animator { get => _animator; set => _animator = value; }
+
         private void Awake()
         {
+            _animator = GetComponent<Animator>();
             _serviceQuizAnswerService = _refForIQuizAnswer.GetComponent<IQuizAnswer>();
             _answer = GetComponentInChildren<TextMeshProUGUI>();
-            _button = GetComponentInChildren<Button>();
+            Button = GetComponentInChildren<Button>();
             _timer = _refForIQuizAnswer.GetComponentInChildren<ITimer>();
         }
         public void InitButton(int id, string value)
         {
-            _id = id;
-            _answer.text = value;
-            _button.onClick.AddListener(() =>
+            Id = id;
+            _answer.text = value + "   |  " + id.ToString();
+            //Button.onClick.AddListener(() =>
+            //{
+            //    _serviceQuizAnswerService.TryValidAnswer(Id);
+            //    if (_timer is SlideTimerService)
+            //    {
+            //        _timer.RestartTime();
+            //    }
+            //});
+        }
+        public void OnClickValid()
+        {
+            _serviceQuizAnswerService.TryValidAnswer(Id);
+            if (_timer is SlideTimerService)
             {
-                _serviceQuizAnswerService.TryValidAnswer(_id);
-                if (_timer is SlideTimerService)
-                {
-                    _timer.RestartTime();
-                }
-            });
+              //  _timer.RestartTime();
+            }
         }
         public void UpdateButton(int id, string value)
         {
-            _id = id;
-            _answer.text = value;
+            Id = id;
+            _answer.text = value +"   |  " + id.ToString();
         }
 
         public int GetIdButton()
-         => _id;
+         => Id;
 
 
     }

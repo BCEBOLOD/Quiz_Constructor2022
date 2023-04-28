@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8617217940cbed4cb0e6bdf3be9298f, type: 3}
-  m_Name: SSAAAA 2
+  m_Name: USA
   m_EditorClassIdentifier: 
-  _description: "\u0430\u043B\u043B\u0430\u0445?"
+  _description: "\u041E\u0442\u0432\u0435\u0442 3 USA"
   _answers:
   - 2d
   - adad
-  - ad
-  - aada
-  _correctAnswerId: 1
+  - 2
+  - 3
+  _correctAnswerId: 3
   _sprite: {fileID: 21300000, guid: 12a69b0bf6fc9d54f935ee2f836a92f8, type: 3}
