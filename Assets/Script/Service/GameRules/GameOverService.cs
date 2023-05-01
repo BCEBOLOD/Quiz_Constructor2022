@@ -37,9 +37,11 @@ public class GameOverHandler : MonoBehaviour, IGameOver
                 await GameOverTypeZeroAttempts(type, _serviceQuizAnswer.NumberCorrectAnswers);
                 break;
             case GameOverType.Victory:
-                await GameOverTypeVictory(type, _serviceQuizAnswer.NumberCorrectAnswers);
+                await GameOverTypeVictory(type, _serviceQuizAnswer.NumberCorrectAnswers);                
                 break;
-
+            case GameOverType.GameFinished:
+            await GameOverTypeGameFinished(type,_serviceQuizAnswer.NumberCorrectAnswers);
+            break;
             default:
                 throw new System.Exception("GameOverService : необработанное исключение по перечислению GameOverType");
         }
@@ -56,6 +58,10 @@ public class GameOverHandler : MonoBehaviour, IGameOver
         //   _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
     }
     private async Task GameOverTypeVictory(GameOverType type, int countCorrectAnswers)
+    {
+        // _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
+    }
+      private async Task GameOverTypeGameFinished(GameOverType type, int countCorrectAnswers)
     {
         // _serviceGameOutcomeDisplay.CalculateInfo(type, countCorrectAnswers);
     }

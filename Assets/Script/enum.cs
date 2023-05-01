@@ -11,4 +11,5 @@ public enum GameOverType
     Victory = 0,
     TimeOut = 1,
     ZeroAttempts = 2,
+    GameFinished = 3,
 }

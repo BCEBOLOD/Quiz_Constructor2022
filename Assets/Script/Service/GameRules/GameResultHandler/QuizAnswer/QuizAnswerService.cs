@@ -39,34 +39,36 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
 
     public void TryValidAnswer(int idButton)
     {
+        _correctAnswer = _iQuesting.CurrentCorrectAnswer(_numberOfResponses);
+        _animationAnswers.OnStartDescreseAnimation(_correctAnswer);
 
-        if (_numberCorrectAnswers == _maxCountQuesting)
+        if (idButton == _correctAnswer && _numberOfResponses != _maxCountQuesting)
+            _numberCorrectAnswers++;
+        else
+            _attemptsService.AdjustAttempts(-1, true);
+//
+
+        if (_numberOfResponses == _maxCountQuesting)
         {
-            _serviceGameOver.GameOver(GameOverType.Victory);
+            if (_numberCorrectAnswers == _maxCountQuesting)
+            {
+                _serviceGameOver.GameOver(GameOverType.Victory);
+                return;
+
+            }
+            _serviceGameOver.GameOver(GameOverType.GameFinished);
             return;
             //Завершение и выход в гл меню
         }
-        if (_maxCountQuesting == _numberOfResponses)
-        {
-            return;
-        }
-        _correctAnswer = _iQuesting.CurrentCorrectAnswer(_numberOfResponses);
 
-        if (idButton == _correctAnswer)
-        {
 
-            _numberCorrectAnswers++;
 
-        }
-        else
-        {
-            _attemptsService.AdjustAttempts(-1, true);
+        //if (_maxCountQuesting <= _numberOfResponses)
+        //    return;
+      
 
-        }
+
         _numberOfResponses++;
-        _animationAnswers.OnStartDescreseAnimation(_correctAnswer);
-
-
     }
 
     public void OnRestart()
