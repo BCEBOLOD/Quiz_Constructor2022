@@ -67,6 +67,7 @@ namespace Questions
         public int CurrentCorrectAnswer(int NumberOfResponses)
         {
             return _questing.QuestionList[NumberOfResponses].CorrectAnswerId;
+           
         }
     }
 

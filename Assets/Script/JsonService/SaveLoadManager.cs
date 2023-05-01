@@ -29,10 +29,20 @@ public class SaveLoadManager : MonoBehaviour
     public void SaveInitButton(int index)
     {
         gameData.indexButton = index;
-         // сохранение данных игры в JSON файл
+        // сохранение данных игры в JSON файл
         string filePath = Application.persistentDataPath + "/game_data.json";
         string jsonData = JsonUtility.ToJson(gameData);
         File.WriteAllText(filePath, jsonData);
+    }
+    public void OpenNextLvl(int currentLvl)
+    {
+        int nextLvl = currentLvl+1;
+        var lenght = gameData.levels.Length;
+        if (nextLvl < lenght)
+        {
+            gameData.levels[nextLvl].IsOpen = true;
+            SaveGameData();
+        }
     }
     public void LoadGameData()
     {

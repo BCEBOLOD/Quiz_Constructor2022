@@ -16,8 +16,9 @@ MonoBehaviour:
   _timer: 60
   _numberLvl: 1
   _questionList:
-  - {fileID: 11400000, guid: 8ac7634fc48067e4ba88f43a90201535, type: 2}
   - {fileID: 11400000, guid: e255c89b6f8bd8f4788af55ccc7f32d9, type: 2}
-  - {fileID: 11400000, guid: c48007d347f459643b6d971e7b33773b, type: 2}
   - {fileID: 11400000, guid: 9a32ef1696ea14e4c8c69822dc49abe0, type: 2}
+  - {fileID: 11400000, guid: 8ac7634fc48067e4ba88f43a90201535, type: 2}
   - {fileID: 11400000, guid: 95b19c467e6e2374e9613f4f1bab7288, type: 2}
+  - {fileID: 11400000, guid: c48007d347f459643b6d971e7b33773b, type: 2}
+  - {fileID: 11400000, guid: 8ac7634fc48067e4ba88f43a90201535, type: 2}
