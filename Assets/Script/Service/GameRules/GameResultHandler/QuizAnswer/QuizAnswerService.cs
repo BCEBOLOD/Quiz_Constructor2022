@@ -11,11 +11,12 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
     [SerializeField] private GameObject _quizPanel;//Панель с попытками,время,вопросы,ответы
     [SerializeField] AnimationAnswersService _animationAnswers;
     private IGameOver _serviceGameOver;
-    private Questions.IQuesting _iQuesting;
+    private IQuesting _iQuesting;
     private IShuffle _iShuffleService;
     private IAttempts _attemptsService;
     private AnimationAnswersService _animationAnswersService;
     public int NumberCorrectAnswers => _numberCorrectAnswers;
+     public int MaxCountQuesting =>_maxCountQuesting;
 
     private void Start()
     {
@@ -29,15 +30,18 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
         };
 
     }
+   
     private void Awake()
     {
         _attemptsService = GetComponent<IAttempts>();
         _iShuffleService = GetComponentInChildren<IShuffle>();
         _serviceGameOver = GetComponent<IGameOver>();
-        _iQuesting = GetComponent<Questions.IQuesting>();
+        _iQuesting = GetComponent<IQuesting>();
         _animationAnswersService = GetComponentInChildren<AnimationAnswersService>();
     }
-
+    public void OnUpdateNumberCorrectAnswers()=>
+          _maxCountQuesting = _iQuesting.NumberQuestions(); // для ограничение на количество кликов
+        
     public void TryValidAnswer(int idButton)
     {
         if (_numberOfResponses != _maxCountQuesting)
@@ -52,16 +56,17 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
 //
         _numberOfResponses++;
 
-        if (_numberOfResponses == _maxCountQuesting)
+            var percent = (_maxCountQuesting * _numberCorrectAnswers)/ 100;
+        if (_numberOfResponses == _maxCountQuesting )
         {
-            if (_numberCorrectAnswers == _maxCountQuesting)
+            if (_numberCorrectAnswers == _maxCountQuesting || percent >= 70)
             {
                 _serviceGameOver.GameOver(GameOverType.Victory);
                 return;
 
-            }
-            _serviceGameOver.GameOver(GameOverType.GameFinished);
-            return;
+            }       
+           _serviceGameOver.GameOver(GameOverType.GameFinished);
+        //   return;
             //Завершение и выход в гл меню
         }
 
@@ -81,5 +86,6 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
         _numberCorrectAnswers = 0;
         _numberOfResponses = 0;
            _iQuesting.NextQuesting(_numberOfResponses);
+           _animationAnswers.TryStopCoroutine();
     }
 }

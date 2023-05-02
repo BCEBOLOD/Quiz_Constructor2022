@@ -15,10 +15,6 @@ public class SaveLoadManager : MonoBehaviour
         LoadGameData();
     }
 
-    private void Start()
-    {
-        print(Application.persistentDataPath);
-    }
     public void SaveGameData()
     {
         // сохранение данных игры в JSON файл
@@ -34,15 +30,28 @@ public class SaveLoadManager : MonoBehaviour
         string jsonData = JsonUtility.ToJson(gameData);
         File.WriteAllText(filePath, jsonData);
     }
-    public void OpenNextLvl(int currentLvl)
+    public void OpenNextLvl(bool isIncrement)
     {
-        int nextLvl = currentLvl;
-        var lenght = gameData.levels.Length;
-        if (nextLvl < lenght)
+        if (TryIncrementIdButton())
         {
-            gameData.levels[nextLvl].IsOpen = true;
+            if (isIncrement)
+            {
+                int temp = gameData.indexButton++;
+                gameData.levels[temp].IsOpen = true;
+            }
+            else
+                gameData.levels[gameData.indexButton].IsOpen = true;
+
             SaveGameData();
         }
+    }
+
+    private bool TryIncrementIdButton()
+    {
+        var lenght = gameData.levels.Length;
+        if (gameData.indexButton < lenght)
+            return true;
+        return false;
     }
     public void LoadGameData()
     {

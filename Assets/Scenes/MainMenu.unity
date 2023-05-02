@@ -686,7 +686,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 217735556}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1470270753}
+        m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
+        m_MethodName: SaveInitButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &217735556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1467,7 +1479,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 450512644}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1470270754}
+        m_TargetAssemblyTypeName: ChoiceLvlService, Assembly-CSharp
+        m_MethodName: InitLvlIndexButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &450512644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1859,7 +1883,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 561522855}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1470270753}
+        m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
+        m_MethodName: SaveInitButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &561522855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2592,7 +2628,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 848130986}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1470270754}
+        m_TargetAssemblyTypeName: ChoiceLvlService, Assembly-CSharp
+        m_MethodName: InitLvlIndexButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &848130986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4693,7 +4741,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1639480052}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1470270754}
+        m_TargetAssemblyTypeName: ChoiceLvlService, Assembly-CSharp
+        m_MethodName: InitLvlIndexButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1639480052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5318,7 +5378,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1875107831}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1470270754}
+        m_TargetAssemblyTypeName: ChoiceLvlService, Assembly-CSharp
+        m_MethodName: InitLvlIndexButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1875107831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5440,7 +5512,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1926907638}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1470270753}
+        m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
+        m_MethodName: SaveInitButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1926907638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5958,7 +6042,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2073155698}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1470270754}
+        m_TargetAssemblyTypeName: ChoiceLvlService, Assembly-CSharp
+        m_MethodName: InitLvlIndexButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2073155698
 MonoBehaviour:
   m_ObjectHideFlags: 0

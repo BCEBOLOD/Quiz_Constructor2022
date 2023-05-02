@@ -6,6 +6,7 @@ using UnityEngine;
 public class Singlton : MonoBehaviour
 {
     [SerializeField] private AudioSource _audiosource;
+    public static int CountLvl { get; private set; } = 10;
     //private void Awake() {
     //    DontDestroyOnLoad(this);
     //}

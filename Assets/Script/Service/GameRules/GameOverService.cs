@@ -60,7 +60,7 @@ public class GameOverHandler : MonoBehaviour, IGameOver
     }
     private async Task GameOverTypeVictory(GameOverType type, int countCorrectAnswers)
     {
- _saveloadmanager.OpenNextLvl(1);
+ _saveloadmanager.OpenNextLvl(false);
     }
     private async Task GameOverTypeGameFinished(GameOverType type, int countCorrectAnswers)
     {

@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Questions
-{
+
     public class QuestionButtonMV : MonoBehaviour
     {
         [SerializeField] private int _id;
@@ -61,4 +60,3 @@ namespace Questions
     }
 
 
-}

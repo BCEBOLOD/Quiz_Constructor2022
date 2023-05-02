@@ -9,7 +9,7 @@ public class GameOutcomeDisplayService : MonoBehaviour, IGameOutcomeDisplay
     private int _totalQuestions;
     // [SerializeField] private Button _nextButton;
     private string _numberCorrectAnswers;
-    [SerializeField] private Questions.QuestingHandler _questions;
+    [SerializeField] private QuestingHandler _questions;
     [SerializeField] private GameOutcomeDisplayView _view;
 
 
@@ -23,7 +23,7 @@ public class GameOutcomeDisplayService : MonoBehaviour, IGameOutcomeDisplay
         }
         else if (type == GameOverType.GameFinished)
         {
-            _view.ShowButton(true, true);
+            _view.ShowButton(true, false);
 
         }
         else

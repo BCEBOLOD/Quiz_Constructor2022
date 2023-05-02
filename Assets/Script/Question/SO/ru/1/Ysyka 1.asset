@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8617217940cbed4cb0e6bdf3be9298f, type: 3}
   m_Name: Ysyka 1
   m_EditorClassIdentifier: 
-  _description: YSykaaaa
+  _description: YSykaaaa 1
   _answers:
   - 2d
   - 1

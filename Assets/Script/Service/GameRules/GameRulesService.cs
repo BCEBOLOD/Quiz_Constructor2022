@@ -10,12 +10,12 @@ public class GameRules : MonoBehaviour//,IGameRules
 
    
     private QuestingHandler _questingHandler;
-    private Questions.IQuesting _iQuesting;
+    private IQuesting _iQuesting;
     private IShuffle _iShuffleService; 
     private void Awake()
     {
      
-        _iQuesting = gameObject.GetComponent<Questions.IQuesting>();
+        _iQuesting = gameObject.GetComponent<IQuesting>();
         _questingHandler = GetComponent<QuestingHandler>();    
         _iShuffleService = gameObject.GetComponentInChildren<IShuffle>();
     }

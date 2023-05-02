@@ -5,8 +5,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Questions
-{
 
 
     public class QuestingHandler : MonoBehaviour, IQuesting
@@ -31,6 +29,10 @@ namespace Questions
             _imageBackground = GetComponentInChildren<IImageBackgroundQuestion>();
              _buttons = _answersHolder.GetComponentsInChildren<QuestionButtonMV>().ToList();
         }
+    public void OnLoadQuestingLvl(int id)
+    {
+        _questing = Resources.Load<QuestionLvl>($"Lvl_{id}");
+    }
         private void Start()
         {
             _desctiptionQuestion.text = Questing.QuestionList[0].Desctiption; //[0].Desctiption;
@@ -79,4 +81,3 @@ namespace Questions
         public int NumberQuestions();
         public int CurrentCorrectAnswer(int NumberOfResponses);
     }
-}
