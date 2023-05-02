@@ -36,7 +36,7 @@ public class SaveLoadManager : MonoBehaviour
     }
     public void OpenNextLvl(int currentLvl)
     {
-        int nextLvl = currentLvl+1;
+        int nextLvl = currentLvl;
         var lenght = gameData.levels.Length;
         if (nextLvl < lenght)
         {

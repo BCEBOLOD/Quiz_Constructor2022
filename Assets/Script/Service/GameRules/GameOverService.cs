@@ -13,6 +13,7 @@ public class GameOverHandler : MonoBehaviour, IGameOver
     private IQuizAnswer _serviceQuizAnswer;
     private IGameOutcomeDisplay _serviceGameOutcomeDisplay;
     [SerializeField] private GameObject _quizPanel;//Панель с попытками,время,вопросы,ответы
+    [SerializeField] private SaveLoadManager _saveloadmanager;//
     private void Awake()
     {
         _serviceTimer = GetComponentInChildren<ITimer>();
@@ -59,7 +60,7 @@ public class GameOverHandler : MonoBehaviour, IGameOver
     }
     private async Task GameOverTypeVictory(GameOverType type, int countCorrectAnswers)
     {
-
+ _saveloadmanager.OpenNextLvl(1);
     }
     private async Task GameOverTypeGameFinished(GameOverType type, int countCorrectAnswers)
     {

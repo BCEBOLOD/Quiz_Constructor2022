@@ -22,7 +22,7 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
         _maxCountQuesting = _iQuesting.NumberQuestions(); // для ограничение на количество кликов
         _animationAnswersService.e_NextQuesting += () =>
         {
-            _numberOfResponses++;
+            //_numberOfResponses++;
             _iShuffleService.OnShuffleButtons();
             if(_numberOfResponses <= _maxCountQuesting)
             _iQuesting.NextQuesting(_numberOfResponses);
@@ -50,6 +50,7 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
         else
             _attemptsService.AdjustAttempts(-1, true);
 //
+        _numberOfResponses++;
 
         if (_numberOfResponses == _maxCountQuesting)
         {
@@ -68,18 +69,17 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
 
         //if (_maxCountQuesting <= _numberOfResponses)
         //    return;
-      
 
 
-     //   _numberOfResponses++;
+        //   _numberOfResponses++;
     }
 
     public void OnRestart()
     {
-           _iQuesting.NextQuesting(_numberOfResponses);
         _quizPanel.gameObject.SetActive(true);
         _correctAnswer = 0;
         _numberCorrectAnswers = 0;
         _numberOfResponses = 0;
+           _iQuesting.NextQuesting(_numberOfResponses);
     }
 }
