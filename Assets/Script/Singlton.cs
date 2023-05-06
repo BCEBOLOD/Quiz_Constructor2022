@@ -5,15 +5,14 @@ using UnityEngine;
 
 public class Singlton : MonoBehaviour
 {
-    [SerializeField] private AudioSource _audiosource;
+
     public static int CountLvl { get; private set; } = 10;
-    //private void Awake() {
-    //    DontDestroyOnLoad(this);
-    //}
-    private static Singlton instance;
+    private static Singlton instance;    
+    public AudioSource AudioSource;
 
     private void Awake()
     {
+
         if (instance == null)
         {
             instance = this;
@@ -21,13 +20,16 @@ public class Singlton : MonoBehaviour
         }
         else
         {
-            // Удаляем дубликат, если он уже существует
+
             Destroy(gameObject);
         }
+        AudioSource = gameObject.GetComponent<AudioSource>();
+       
     }
 
     public static Singlton Instance
     {
         get { return instance; }
     }
+  
 }

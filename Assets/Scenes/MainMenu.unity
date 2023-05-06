@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 21021242}
   - component: {fileID: 21021243}
-  - component: {fileID: 21021244}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -215,10 +214,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 21021244}
+      - m_Target: {fileID: 1470270755}
         m_TargetAssemblyTypeName: SoundSetting, Assembly-CSharp
         m_MethodName: UpdateVolume
-        m_Mode: 0
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -227,23 +226,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &21021244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21021241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6467c97a8e7d2ee4fb3eefb569be35dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sliderSound: {fileID: 0}
-  _onSound: {fileID: 2061834354}
-  _offSound: {fileID: 1586326724}
-  _saveloadManager: {fileID: 1470270753}
-  _singlton: {fileID: 0}
 --- !u!1 &28646335
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +427,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &158873778
 GameObject:
@@ -1372,7 +1354,7 @@ RectTransform:
   - {fileID: 243685050}
   - {fileID: 707835667}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4189,6 +4171,7 @@ GameObject:
   - component: {fileID: 1470270752}
   - component: {fileID: 1470270753}
   - component: {fileID: 1470270754}
+  - component: {fileID: 1470270755}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -4225,7 +4208,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1470270752
 MonoBehaviour:
@@ -4269,6 +4252,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _buttonsHolder: {fileID: 761691121}
   _saveLoadManager: {fileID: 1470270753}
+--- !u!114 &1470270755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470270749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6467c97a8e7d2ee4fb3eefb569be35dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sliderSound: {fileID: 21021243}
+  _onSound: {fileID: 2061834354}
+  _offSound: {fileID: 1586326724}
+  _saveloadManager: {fileID: 1470270753}
+  _singlton: {fileID: 2060198440}
+  _audiosource: {fileID: 2060198442}
 --- !u!1 &1494937996
 GameObject:
   m_ObjectHideFlags: 0
@@ -4474,9 +4475,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 21021244}
+      - m_Target: {fileID: 1470270755}
         m_TargetAssemblyTypeName: SoundSetting, Assembly-CSharp
-        m_MethodName: UpdateVolume
+        m_MethodName: SwitchStateMusic
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4524,6 +4525,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586326722}
   m_CullTransparentMesh: 1
+--- !u!1001 &1592279827
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2211564899198745197, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_Name
+      value: YandexGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: caf9732433f4dc044845763962493607, type: 3}
 --- !u!1 &1612222871
 GameObject:
   m_ObjectHideFlags: 0
@@ -5714,7 +5776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e449bb0c010cacf4681f611f9fa01f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audiosource: {fileID: 2060198442}
+  AudioSource: {fileID: 2060198442}
 --- !u!4 &2060198441
 Transform:
   m_ObjectHideFlags: 0
@@ -5728,7 +5790,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2060198442
 AudioSource:
@@ -5740,11 +5802,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5ffde06597dde45388878fb1fa569f87, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5909,9 +5971,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 21021244}
+      - m_Target: {fileID: 1470270755}
         m_TargetAssemblyTypeName: SoundSetting, Assembly-CSharp
-        m_MethodName: UpdateVolume
+        m_MethodName: SwitchStateMusic
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
