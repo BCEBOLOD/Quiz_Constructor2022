@@ -9,12 +9,12 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
     [SerializeField] private int _numberCorrectAnswers; // Количество верных ответов 
     [SerializeField] private int _numberOfResponses;
     [SerializeField] private GameObject _quizPanel;//Панель с попытками,время,вопросы,ответы
-    [SerializeField] AnimationAnswersService _animationAnswers;
+    [SerializeField] AnswersAnimationService _animationAnswers;
     private IGameOver _serviceGameOver;
     private IQuesting _iQuesting;
     private IShuffle _iShuffleService;
     private IAttempts _attemptsService;
-    private AnimationAnswersService _animationAnswersService;
+    private AnswersAnimationService _animationAnswersService;
     public int NumberCorrectAnswers => _numberCorrectAnswers;
      public int MaxCountQuesting =>_maxCountQuesting;
 
@@ -37,7 +37,7 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
         _iShuffleService = GetComponentInChildren<IShuffle>();
         _serviceGameOver = GetComponent<IGameOver>();
         _iQuesting = GetComponent<IQuesting>();
-        _animationAnswersService = GetComponentInChildren<AnimationAnswersService>();
+        _animationAnswersService = GetComponentInChildren<AnswersAnimationService>();
     }
     public void OnUpdateNumberCorrectAnswers()=>
           _maxCountQuesting = _iQuesting.NumberQuestions(); // для ограничение на количество кликов

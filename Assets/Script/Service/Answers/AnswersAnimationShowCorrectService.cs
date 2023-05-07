@@ -4,15 +4,15 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using System.Linq;
-public class AnimationAnswersService : MonoBehaviour
+public class AnswersAnimationShowCorrectService : AnswersAnimationService
 {
-    public event UnityAction e_NextQuesting;
-    public event UnityAction e_AwaitNewQuesting;
-    [SerializeField] private List<QuestionButtonMV> _buttonsList;
+    public override event UnityAction e_NextQuesting;
+    public override event UnityAction e_AwaitNewQuesting;
+   // [SerializeField] private List<QuestionButtonMV> _buttonsList;
     [SerializeField] private int idtemp;
-   [SerializeField] private Coroutine _waitAndAnimateCoroutine;
-    private bool _isRunningCorutine;
-    public void OnStartDescreseAnimation(int id)
+   //[SerializeField] private Coroutine _waitAndAnimateCoroutine;
+    //private bool _isRunningCorutine;
+    public override void OnStartDescreseAnimation(int id)
     {
         e_AwaitNewQuesting?.Invoke();
         idtemp = id;
@@ -31,7 +31,7 @@ public class AnimationAnswersService : MonoBehaviour
             }
         }
     }
-    public void TryStopCoroutine()
+    public override void TryStopCoroutine()
     {
         if (_isRunningCorutine && _waitAndAnimateCoroutine != null)
             StopCoroutine(_waitAndAnimateCoroutine);
@@ -41,7 +41,7 @@ public class AnimationAnswersService : MonoBehaviour
             item.Button.interactable = true;
         }
     }
-    private IEnumerator WaitAndAnimate(float waitTimeOne,float waitTimeTwo)
+    public override IEnumerator WaitAndAnimate(float waitTimeOne,float waitTimeTwo)
     {
         _isRunningCorutine = true;
         yield return new WaitForSeconds(waitTimeOne);
@@ -55,7 +55,7 @@ public class AnimationAnswersService : MonoBehaviour
     {
         _buttonsList[idtemp].Animator.SetTrigger(GameConst.Anim_OnDecrease);
     }
-    public void OnIncreaseButtonAnimation()
+    public override void OnIncreaseButtonAnimation()
     {       
         foreach (var item in _buttonsList)
         {
@@ -68,3 +68,9 @@ public class AnimationAnswersService : MonoBehaviour
 
 
 
+
+/*
+1.При клике, вервый ответ показывается
+
+2.При клике все уменьшаются
+*/

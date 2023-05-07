@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class NextLevelManager : MonoBehaviour
 {
-    [SerializeField] private AnimationAnswersService _animationAnswersService;
+    [SerializeField] private AnswersAnimationShowCorrectService _animationAnswersService;
     [SerializeField] private SaveLoadManager _saveloadManager;
     [SerializeField] QuestingHandler _questingHandler;
     [SerializeField] private Restart _restart;

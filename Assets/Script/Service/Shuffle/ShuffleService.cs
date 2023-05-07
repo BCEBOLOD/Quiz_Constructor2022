@@ -7,7 +7,10 @@ using UnityEngine.UI;
 public class ShuffleService : MonoBehaviour, IShuffle
 {
      [SerializeField]  private Button[] _buttons;   
-      [SerializeField] private QuestingHandler _questingHandler;
+     private QuestingHandler _questingHandler;
+      private void Awake() {
+        _questingHandler = GetComponentInParent<QuestingHandler>();
+      }
     public void OnShuffleButtons()
     {
          for (int i = 0; i < _buttons.Length; i++)

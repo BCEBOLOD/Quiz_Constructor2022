@@ -11,7 +11,7 @@ public class SlideTimerService : MonoBehaviour, ITimer //IGameOver
     [SerializeField] private TextMeshProUGUI _timerText;
     [SerializeField] private float _baseTime;
     [SerializeField] private bool _startTimer = true;
-    [SerializeField] private AnimationAnswersService _animationAnswersService;
+    [SerializeField] private AnswersAnimationService _animationAnswersService;
     public float TimerGameplay
     {
         get => _timerGameplay;
