@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 729899799}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 296e6b8fb5b2af2478960600ac78205d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2538fad9ba6df134a8e14b3ab854b1c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _buttonsList:
@@ -1527,7 +1527,6 @@ MonoBehaviour:
   - {fileID: 2141707684}
   - {fileID: 2084382820}
   - {fileID: 481673321}
-  idtemp: 0
 --- !u!1 &735134926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1798,7 +1797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a35b4e3a0611dd4e84664d6fe7f6649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animationAnswersService: {fileID: 729899801}
+  _animationAnswersService: {fileID: 0}
   _saveloadManager: {fileID: 1915770296}
   _questingHandler: {fileID: 1915770295}
   _restart: {fileID: 795835600}
@@ -3149,7 +3148,6 @@ MonoBehaviour:
   - {fileID: 2141707681}
   - {fileID: 2084382817}
   - {fileID: 481673318}
-  _questingHandler: {fileID: 1915770295}
 --- !u!1 &1768062990
 GameObject:
   m_ObjectHideFlags: 0
@@ -3344,7 +3342,7 @@ MonoBehaviour:
   _numberCorrectAnswers: 0
   _numberOfResponses: 0
   _quizPanel: {fileID: 1184491041}
-  _animationAnswers: {fileID: 729899801}
+  _animationAnswers: {fileID: 0}
 --- !u!114 &1915770289
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,14 +14,14 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
     private IQuesting _iQuesting;
     private IShuffle _iShuffleService;
     private IAttempts _attemptsService;
-    private AnswersAnimationService _animationAnswersService;
+  //  private AnswersAnimationService _animationAnswersService;
     public int NumberCorrectAnswers => _numberCorrectAnswers;
      public int MaxCountQuesting =>_maxCountQuesting;
 
     private void Start()
     {
         _maxCountQuesting = _iQuesting.NumberQuestions(); // для ограничение на количество кликов
-        _animationAnswersService.e_NextQuesting += () =>
+        _animationAnswers.e_NextQuesting += () =>
         {
             //_numberOfResponses++;
             _iShuffleService.OnShuffleButtons();
@@ -33,11 +33,11 @@ public class QuizAnswerService : MonoBehaviour, IQuizAnswer, IRestart
    
     private void Awake()
     {
+        _animationAnswers = GetComponentInChildren<AnswersAnimationService>();
         _attemptsService = GetComponent<IAttempts>();
         _iShuffleService = GetComponentInChildren<IShuffle>();
         _serviceGameOver = GetComponent<IGameOver>();
         _iQuesting = GetComponent<IQuesting>();
-        _animationAnswersService = GetComponentInChildren<AnswersAnimationService>();
     }
     public void OnUpdateNumberCorrectAnswers()=>
           _maxCountQuesting = _iQuesting.NumberQuestions(); // для ограничение на количество кликов
