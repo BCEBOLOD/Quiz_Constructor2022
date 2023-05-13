@@ -29,7 +29,7 @@ using UnityEngine.UI;
         public void InitButton(int id, string value)
         {
             Id = id;
-            _answer.text = value + "   |  " + id.ToString();
+            _answer.text = value;
             //Button.onClick.AddListener(() =>
             //{
             //    _serviceQuizAnswerService.TryValidAnswer(Id);
@@ -50,7 +50,7 @@ using UnityEngine.UI;
         public void UpdateButton(int id, string value)
         {
             Id = id;
-            _answer.text = value +"   |  " + id.ToString();
+            _answer.text = value ;
         }
 
         public int GetIdButton()
