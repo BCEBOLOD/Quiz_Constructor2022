@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class Attempts : MonoBehaviour, IAttempts
 {
     [SerializeField] private int _numberAttempts;
-    [SerializeField] private List<Image> _health;
+   // [SerializeField] private List<Image> _health;
+   [SerializeField] private List<HealthUI> _healths;
     private IGameOver _serviceGameOver;
 
 
@@ -41,13 +42,14 @@ public class Attempts : MonoBehaviour, IAttempts
     private void UpdateHealth(bool IsTakeDamage)
     {
         if (IsTakeDamage)
-            if (_health.Any(x => x?.gameObject.activeSelf == true))
-                _health.FirstOrDefault(x => x?.gameObject.activeSelf == true)?.gameObject.SetActive(false);
+            if (_healths.Any(x => x?.IsActive == true))
+            //    _healths.FirstOrDefault(x => x?.isActive == true)?.gameObject.SetActive(false);
+                _healths.FirstOrDefault(x => x?.IsActive == true)?.StateActive(false);
     }
 
     public void OnRestart()
     {
-        _health.ForEach(x => x.gameObject.SetActive(true));
-        _numberAttempts = _health.Count;
+        _healths.ForEach(x => x.OnRestart());
+        _numberAttempts = _healths.Count;
     }
 }

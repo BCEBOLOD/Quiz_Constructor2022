@@ -12,9 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 016090216db027249b992503b9dbb136, type: 3}
   m_Name: Lvl_5
   m_EditorClassIdentifier: 
-  _descriptionLvl: "\u0412\u0438\u0434\u044B syk"
+  _descriptionLvl: 
   _timer: 60
   _numberLvl: 1
   _questionList:
-  - {fileID: 11400000, guid: 7c54dd014941d98449623e2ec2be2e6f, type: 2}
-  - {fileID: 11400000, guid: 7aa84e2fd7277524091d7bd53c44caad, type: 2}
+  - {fileID: 11400000, guid: 7f159f1a49bfae04c890649479db2852, type: 2}
+  - {fileID: 11400000, guid: c44c821f9fbb6b54ba4cce65c35fb6f2, type: 2}
+  - {fileID: 11400000, guid: cdb96016b65425a4c9088bb40dd88d6d, type: 2}
+  - {fileID: 11400000, guid: d495049edb403674d8f5c2c43e64efd2, type: 2}
+  - {fileID: 11400000, guid: 368bea4a43c1baa4997a9607cc1f292b, type: 2}
+  - {fileID: 11400000, guid: c9cec19554844d54eadeccbeafc5cca8, type: 2}
+  - {fileID: 11400000, guid: 9bc4981c35da4e34f853eb5253a72fae, type: 2}
+  - {fileID: 11400000, guid: e4af710b4b9a98442b9743188ef38f01, type: 2}
+  - {fileID: 11400000, guid: 5cb96f378749f91419981136cf861dee, type: 2}
+  - {fileID: 11400000, guid: 764feef64f9c5c640ae616a078ddfc5b, type: 2}

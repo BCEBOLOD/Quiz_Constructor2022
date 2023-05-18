@@ -1,0 +1,1551 @@
+fileFormatVersion: 2
+guid: 560b0a893f1ce084daeabc289e523a86
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5439317765141808327
+    second: HealthAtlas_0
+  - first:
+      213: -3977897668891788730
+    second: HealthAtlas_1
+  - first:
+      213: 4377988385964950621
+    second: HealthAtlas_2
+  - first:
+      213: -937934602858591130
+    second: HealthAtlas_3
+  - first:
+      213: -6110313089920499048
+    second: HealthAtlas_4
+  - first:
+      213: -5793312650772371570
+    second: HealthAtlas_5
+  - first:
+      213: -8043852569038197350
+    second: HealthAtlas_6
+  - first:
+      213: -460961881803297520
+    second: HealthAtlas_7
+  - first:
+      213: -5330460281871459199
+    second: HealthAtlas_8
+  - first:
+      213: -8661451200621381801
+    second: HealthAtlas_9
+  - first:
+      213: -2477964793213377289
+    second: HealthAtlas_10
+  - first:
+      213: 7284838094333641437
+    second: HealthAtlas_11
+  - first:
+      213: -2899902085606379229
+    second: HealthAtlas_12
+  - first:
+      213: -6786875510610914966
+    second: HealthAtlas_13
+  - first:
+      213: 4119510509522495851
+    second: HealthAtlas_14
+  - first:
+      213: -6925798649339548607
+    second: HealthAtlas_15
+  - first:
+      213: -1859910179871046468
+    second: HealthAtlas_16
+  - first:
+      213: -656496132706611738
+    second: HealthAtlas_17
+  - first:
+      213: 3160735985271934689
+    second: HealthAtlas_18
+  - first:
+      213: 2037834496259830470
+    second: HealthAtlas_19
+  - first:
+      213: 9152119298936536994
+    second: HealthAtlas_20
+  - first:
+      213: -1220559567265605393
+    second: HealthAtlas_21
+  - first:
+      213: 4312656860474960937
+    second: HealthAtlas_22
+  - first:
+      213: 6397746128813744626
+    second: HealthAtlas_23
+  - first:
+      213: -2861498098014636997
+    second: HealthAtlas_24
+  - first:
+      213: 4268619757646275595
+    second: HealthAtlas_25
+  - first:
+      213: 1390332463833884285
+    second: HealthAtlas_26
+  - first:
+      213: -2537387864878460213
+    second: HealthAtlas_27
+  - first:
+      213: 7081510878718203200
+    second: HealthAtlas_28
+  - first:
+      213: -8849042454624479269
+    second: HealthAtlas_29
+  - first:
+      213: 6966519847209459516
+    second: HealthAtlas_30
+  - first:
+      213: -881919003684575038
+    second: HealthAtlas_31
+  - first:
+      213: 410230398341126251
+    second: HealthAtlas_32
+  - first:
+      213: 3270785117134343121
+    second: HealthAtlas_33
+  - first:
+      213: 3435001868936385197
+    second: HealthAtlas_34
+  - first:
+      213: -3752940222410783649
+    second: HealthAtlas_35
+  - first:
+      213: 7153284825792375326
+    second: HealthAtlas_36
+  - first:
+      213: -5195903398749697298
+    second: HealthAtlas_37
+  - first:
+      213: 1568017529103294875
+    second: HealthAtlas_38
+  - first:
+      213: -2811136282830902540
+    second: HealthAtlas_39
+  - first:
+      213: 2515292246560154389
+    second: HealthAtlas_40
+  - first:
+      213: -7979645988422114054
+    second: HealthAtlas_41
+  - first:
+      213: 410144735269275079
+    second: HealthAtlas_42
+  - first:
+      213: 3444404165146212746
+    second: HealthAtlas_43
+  - first:
+      213: 555656284283940422
+    second: HealthAtlas_44
+  - first:
+      213: -4956473806367004630
+    second: HealthAtlas_45
+  - first:
+      213: -7334756208961463118
+    second: HealthAtlas_46
+  - first:
+      213: -5687497523665005461
+    second: HealthAtlas_47
+  - first:
+      213: 6889039459216097159
+    second: HealthAtlas_48
+  - first:
+      213: -5928730049305792358
+    second: HealthAtlas_49
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 1
+    compressionQuality: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HealthAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 905
+        width: 123
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee8deed1a03ddb20800000000000000
+      internalID: 3160735985271934689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 905
+        width: 123
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fabef5a96b48d4b977a5af4c96c7ff
+      internalID: 1377021666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 898
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec53cf6049d28db45b900446733e0ed8
+      internalID: 1989321780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 897
+        width: 123
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce67ca0ed0067c044a83b1b203767c7f
+      internalID: 1340790261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 897
+        width: 123
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84770f9bb04a6c040bd49f1670c7461f
+      internalID: -715192436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 895
+        width: 123
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e31540fe71007d4f9161aa5eb4ddcef
+      internalID: -1848727624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 896
+        width: 123
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed5bc3ff03dabd45b7085646c36f7e7
+      internalID: -2060648304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_7
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 896
+        width: 123
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7a85a0398f42e47846f0a2c6cd8e39
+      internalID: -1146727569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 772
+        width: 123
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c95e2d20abe6ca419d1a96bd232af94
+      internalID: -1281215472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 768
+        width: 123
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb9f847d68e6ac42ac562c94adade73
+      internalID: 586219283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 766
+        width: 124
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261d33117a412ad4a8f9309f0f0b4b95
+      internalID: -646231961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 767
+        width: 124
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511b6f4af587bab44af8287106deda3a
+      internalID: 1984759242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 653
+        width: 123
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e434370a63fd75418707d60dd6088e3
+      internalID: -497301894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 636
+        width: 125
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ca0fb9a9358b14b935353a416f40db
+      internalID: -493977040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_14
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 639
+        width: 124
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a85a971c78afb5409328e93b028032e
+      internalID: 232583535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_15
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 639
+        width: 124
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8982048ca777df4dbb2cbe13babe696
+      internalID: -246052902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_16
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 639
+        width: 124
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70000944071b2f74494c57a1fbb493bd
+      internalID: 1249654336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_17
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 639
+        width: 124
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bc9a9d69848384e8e77aac4826ec51
+      internalID: -1944840081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_18
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 641
+        width: 124
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b546488d53e3b1b44aa89815fcd37beb
+      internalID: 1621010433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 531
+        width: 122
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aefdc4ba7811c8408c2d7aa708c8562
+      internalID: -606885784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_20
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 511
+        width: 124
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b53753016fad064e81cdf0333e08842
+      internalID: 424592772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_22
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 510
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488fa6710f445d941b513a68bb2390ef
+      internalID: 2028646202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_23
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 513
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf41a1c8831aabc4cb98b298de7448f7
+      internalID: 1558034774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_24
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 512
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f194f2b1e5845f94982fe13a701bf7ae
+      internalID: 467784807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_25
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 513
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec688fef48507b4f9b86c58374d50a1
+      internalID: -816910860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_26
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 404
+        width: 100
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf04ddf8e9fa564db12d0000a62324d
+      internalID: -434392597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_27
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 395
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660bbfe5e88c3314c992c7e7426ffd28
+      internalID: -584617816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_28
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 382
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a1be12a252f1044aa09ce21b03e630
+      internalID: -697569869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_29
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 382
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3920785cca4d1147a7258da7ee30f93
+      internalID: -1493281641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_30
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f1c0a128bad7b46bfefc00168cd463
+      internalID: -223911133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_31
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 384
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea2ac30294b4ab489f1dfbc24d04f10
+      internalID: -607104536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_32
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 384
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54de07bdb78f7af4dade6bae1a96f900
+      internalID: -1756466382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_33
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 386
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aecea7a9835dac498d3e57b86cbcd3b
+      internalID: 1828801105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_34
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 317
+        width: 105
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808f2bae41212c04d9ccdc2f0c656822
+      internalID: -300443427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_35
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 256
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09beba08c20057b4bafe067e8b121d94
+      internalID: -491763069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_36
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 256
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398bc529e7f93134a8a0c3a3fb21ae13
+      internalID: 1935955916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_37
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 256
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d22be5421378354da063489d70465c4
+      internalID: -1644826626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_38
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 258
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888e06f7b98cbcd46a05003936e5a80c
+      internalID: -20787234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_39
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 256
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6203bb1d2236d4b9fd009c6c1ba796
+      internalID: 1787496731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_40
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 258
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9906baf015140ec4ba83edeb8062e593
+      internalID: -1191014293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_41
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 261
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37a8633c433f744eb0013b469d90edb
+      internalID: 299839088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 113
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f69daf6aa0c5c41abdb79fd5d50898
+      internalID: -1737983338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_43
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 126
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d7bfe4b2746dc46b34fcb864c6de51
+      internalID: 1574264690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_44
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 126
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6948958e110ec41ab8d158bd29b205
+      internalID: 371360456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_45
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 126
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81584d327a38faf45b0eb1a3ed961321
+      internalID: -602133456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_46
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 132
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fc7c24fa0700d4489dba8cf35d9374
+      internalID: 1439403248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_47
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 130
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee2cfa3f0a6d2140ac10f7b9e2f058c
+      internalID: 1592721736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_48
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 132
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4fd6115d6312746a8d2a3aa157ba5f
+      internalID: -1366932888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_49
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 132
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c121737e73ba7bd48b9accc0dc04dc24
+      internalID: -1385982922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_50
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214a7974c800a184c80c92e2ea2f663c
+      internalID: -1702724972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_51
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 0
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f46a546a1cdddc498fcb584d945659e
+      internalID: 1141471294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_52
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec179024a773a04da2c5afa7be16032
+      internalID: 81272651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_53
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 0
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87c3b3709350934293ebe3c399930c8
+      internalID: 1086912414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_54
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 0
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07354b8ecec006489e02b387167ea33
+      internalID: 1735136208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_55
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 0
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859f681eb0bbbeb47b979d51ceb03730
+      internalID: -856917108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_56
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 0
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b436ade117491b848baa00eccd24579c
+      internalID: 22268122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_21
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 508
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8349b02b56cafb4aa8be066712094ca
+      internalID: -798765452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthAtlas_57
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 768
+        width: 120
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c81ef7ba2961e47bd839d3791f818d
+      internalID: -1184465453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f535667053f177446a3fb30fdff25bb0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HealthAtlas_0: 3160735985271934689
+      HealthAtlas_1: 1377021666
+      HealthAtlas_10: -646231961
+      HealthAtlas_11: 1984759242
+      HealthAtlas_12: -497301894
+      HealthAtlas_13: -493977040
+      HealthAtlas_14: 232583535
+      HealthAtlas_15: -246052902
+      HealthAtlas_16: 1249654336
+      HealthAtlas_17: -1944840081
+      HealthAtlas_18: 1621010433
+      HealthAtlas_19: -606885784
+      HealthAtlas_2: 1989321780
+      HealthAtlas_20: 424592772
+      HealthAtlas_21: -798765452
+      HealthAtlas_22: 2028646202
+      HealthAtlas_23: 1558034774
+      HealthAtlas_24: 467784807
+      HealthAtlas_25: -816910860
+      HealthAtlas_26: -434392597
+      HealthAtlas_27: -584617816
+      HealthAtlas_28: -697569869
+      HealthAtlas_29: -1493281641
+      HealthAtlas_3: 1340790261
+      HealthAtlas_30: -223911133
+      HealthAtlas_31: -607104536
+      HealthAtlas_32: -1756466382
+      HealthAtlas_33: 1828801105
+      HealthAtlas_34: -300443427
+      HealthAtlas_35: -491763069
+      HealthAtlas_36: 1935955916
+      HealthAtlas_37: -1644826626
+      HealthAtlas_38: -20787234
+      HealthAtlas_39: 1787496731
+      HealthAtlas_4: -715192436
+      HealthAtlas_40: -1191014293
+      HealthAtlas_41: 299839088
+      HealthAtlas_42: -1737983338
+      HealthAtlas_43: 1574264690
+      HealthAtlas_44: 371360456
+      HealthAtlas_45: -602133456
+      HealthAtlas_46: 1439403248
+      HealthAtlas_47: 1592721736
+      HealthAtlas_48: -1366932888
+      HealthAtlas_49: -1385982922
+      HealthAtlas_5: -1848727624
+      HealthAtlas_50: -1702724972
+      HealthAtlas_51: 1141471294
+      HealthAtlas_52: 81272651
+      HealthAtlas_53: 1086912414
+      HealthAtlas_54: 1735136208
+      HealthAtlas_55: -856917108
+      HealthAtlas_56: 22268122
+      HealthAtlas_57: -1184465453
+      HealthAtlas_58: 1257446869
+      HealthAtlas_6: -2060648304
+      HealthAtlas_7: -1146727569
+      HealthAtlas_8: -1281215472
+      HealthAtlas_9: 586219283
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
