@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8617217940cbed4cb0e6bdf3be9298f, type: 3}
   m_Name: What is the scariest fruit
   m_EditorClassIdentifier: 
-  _description: What is the scariest fruit?
+  _description: "\u041A\u0430\u043A\u043E\u0439 \u0441\u0430\u043C\u044B\u0439 \u0441\u0442\u0440\u0430\u0448\u043D\u044B\u0439
+    \u0444\u0440\u0443\u043A\u0442?"
   _answers:
-  - "\u043A\u0443\u0440\u0438\u043D"
-  - "\u0430\u043B\u044B\u043C\u0430\u043A"
-  - "\u0434\u0443\u0440\u044F\u043D"
-  - "\u0441\u044B\u043B\u044C\u043A\u0430"
+  - "\u041A\u0443\u0440\u0438\u043D"
+  - "\u0410\u043B\u044B\u043C\u0430\u043A"
+  - "\u0414\u0443\u0440\u044F\u043D"
+  - "\u0421\u044B\u043B\u044C\u043A\u0430"
   _correctAnswerId: 2
   _sprite: {fileID: 0}

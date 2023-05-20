@@ -1460,9 +1460,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1470270753}
-        m_TargetAssemblyTypeName: SaveLoadManager, Assembly-CSharp
-        m_MethodName: SaveInitButton
+      - m_Target: {fileID: 1470270754}
+        m_TargetAssemblyTypeName: ChoiceLvlService, Assembly-CSharp
+        m_MethodName: InitLvlIndexButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
