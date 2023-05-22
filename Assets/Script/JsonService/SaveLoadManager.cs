@@ -13,6 +13,7 @@ public class SaveLoadManager : MonoBehaviour
     {
         // загрузка данных игры из JSON файла при старте игры
         LoadGameData();
+      
     }
 
     public void SaveGameData()

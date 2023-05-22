@@ -6,7 +6,7 @@ using UnityEngine;
 public class Singlton : MonoBehaviour
 {
 
-    public static int CountLvl { get; private set; } = 10;
+    public static int CountLvl { get; private set; } = 6;
     private static Singlton instance;    
     public AudioSource AudioSource;
 

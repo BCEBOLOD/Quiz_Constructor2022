@@ -13,11 +13,11 @@ public class NextLevelManager : MonoBehaviour
    
     public void MoveToNextLvl()
     {
+        _saveloadManager.OpenNextLvl(true);
 _animationAnswersService.TryStopCoroutine();
         _questingHandler.OnLoadQuestingLvl(_saveloadManager.GameData.indexButton);
         _restart.OnRestart();
         _quizAnswerService.OnUpdateNumberCorrectAnswers();
-        _saveloadManager.OpenNextLvl(true);
         //  _saveloadManager.OpenNextLvl(true);
         /*
         переключить ид кнопки лвла

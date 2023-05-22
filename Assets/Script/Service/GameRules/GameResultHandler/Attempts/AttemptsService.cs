@@ -22,7 +22,7 @@ public class Attempts : MonoBehaviour, IAttempts
     {
         _numberAttempts += value;
 
-        if (_numberAttempts > 0)
+        if (_numberAttempts >= 0)
         {
             if (IsTakeDamage)
             {

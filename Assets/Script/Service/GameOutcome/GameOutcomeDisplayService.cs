@@ -23,15 +23,17 @@ public class GameOutcomeDisplayService : MonoBehaviour, IGameOutcomeDisplay
         }
         else if (type == GameOverType.GameFinished)
         {
-            _view.ShowButton(true, false);
-
+            if (numberCorrectAnswers >= 8)
+                _view.ShowButton(true, true);
+            else
+                _view.ShowButton(true, false);
         }
         else
         {
             _view.ShowButton(true, true);
             //кнопка с переходом на следующий уровень
         }
-        _numberCorrectAnswers = $"{numberCorrectAnswers}/{_totalQuestions}";
+        _numberCorrectAnswers = $"{numberCorrectAnswers} правильных ответов из {_totalQuestions}";
         _view.ShowResult(0, _numberCorrectAnswers);
     }
 
